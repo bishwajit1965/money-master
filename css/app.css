@@ -19,7 +19,7 @@ body {
 .grid-item-left {
   background-image: url("../images/business-6521193__340.jpg");
   background-position: center;
-  min-height: 96vh;
+  min-height: 98vh;
   height: auto;
   background-size: cover;
   color: #fff;
@@ -40,7 +40,7 @@ body {
   align-items: flex-start;
   grid-template-columns: minmax(2, 1fr);
   grid: 1rem;
-  min-height: 92vh;
+  min-height: 98vh;
 }
 .item-bottom {
   display: grid;
@@ -54,8 +54,7 @@ body {
   gap: 1rem;
 }
 .saving-amount {
-  background-color: #0750aa;
-  padding: 0.4rem 2rem;
+  padding: 0.3rem;
   font-weight: 900;
   color: #fff;
   border-radius: 0.3rem;

@@ -17,9 +17,9 @@
       </div>
       <div class="grid-item-right">
         <div class="item-top">
+          <!-- Income area begins -->
           <div class="income-area">
             <h2>Income</h2>
-
             <table>
               <tr>
                 <td>Income:</td>
@@ -28,26 +28,41 @@
                     id="income"
                     type="text"
                     name=""
-                    disabled
                     value="10000"
+                    placeholder="Input income value..."
                   />
                 </td>
               </tr>
             </table>
           </div>
+          <!-- Income area ends -->
+
+          <!-- Expenses area begins -->
           <div class="expenses-area">
             <h2>Expenses</h2>
             <table>
               <tr>
                 <td>Food:</td>
                 <td>
-                  <input id="food" type="text" name="" disabled value="3000" />
+                  <input
+                    id="food"
+                    type="text"
+                    name=""
+                    value="3000"
+                    placeholder="Input food value..."
+                  />
                 </td>
               </tr>
               <tr>
                 <td>Rent:</td>
                 <td>
-                  <input id="rent" type="text" name="" disabled value="2000" />
+                  <input
+                    id="rent"
+                    type="text"
+                    name=""
+                    value="2000"
+                    placeholder="Input rent value..."
+                  />
                 </td>
               </tr>
               <tr>
@@ -58,8 +73,8 @@
                     type="text"
                     class="input-field"
                     name=""
-                    disabled
                     value="500"
+                    placeholder="Input other expenses..."
                   />
                 </td>
               </tr>
@@ -77,34 +92,55 @@
               </tr>
             </table>
           </div>
+          <!-- Expenses area ends -->
         </div>
         <div class="item-bottom">
+          <!-- Total expenses begins -->
           <h2>Total expenses: <span id="total-expenses">00</span> Tk</h2>
           <h2>Balance: <span id="previous-balance">00</span> Tk</h2>
           <div class="saving-calculation">
             <div class="saving">Save:</div>
-            <div class="saving-amount">20</div>
+            <div class="saving-amount">
+              <input
+                type="text"
+                id="saving-percentage"
+                name=""
+                placeholder="Input % value..."
+              />
+            </div>
             <div class="saving-in-percentage">%</div>
             <div class="saving-button">
-              <button id="btn-save-money" class="saving-button" type="submit">
+              <button
+                id="btn-save-money"
+                name="submit"
+                class="saving-button"
+                type="submit"
+              >
                 Save
               </button>
             </div>
           </div>
+          <!-- Total expenses ends -->
           <div class="bottom-text-area">
+            <!-- saving amount begins -->
             <div>
               <h2>Saving amount: <span id="saving-amount">00 </span>Tk</h2>
             </div>
+            <!-- saving amount ends -->
+
+            <!-- remaining balance begins -->
             <div>
               <h2>
                 Remaining balance: <span id="remaining-balance">00</span> Tk
               </h2>
             </div>
+            <!-- remaining balance ends -->
           </div>
         </div>
       </div>
     </div>
     <!-- Ja file linked -->
+    <script src="js/validation.js"></script>
     <script src="js/utility.js"></script>
     <script src="js/app.js"></script>
   </body>
